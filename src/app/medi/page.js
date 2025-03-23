@@ -90,10 +90,9 @@ const SymptomAnalyzer = () => {
             </div>
           )}
           
-          {/* Render the structured response */}
           {response && (
             <div className="p-6 bg-gray-800 border-t border-gray-700">
-              <h2 className="text-xl font-semibold text-teal-400 mb-4">Analysis Results for "{symptoms}"</h2>
+              <h2 className="text-xl font-semibold text-teal-400 mb-4">Analysis Results for {symptoms}</h2>
               
               <div className="bg-gray-750 p-5 rounded-lg border border-gray-600">
                 {/* Introduction */}

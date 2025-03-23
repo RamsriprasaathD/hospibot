@@ -124,7 +124,7 @@ const MedicalAppointmentSystem = () => {
         {activeTab === 'schedule' && (
           <div className="max-w-md mx-auto p-6 bg-gray-800 rounded-lg shadow-lg border border-gray-700">
             <h2 className="text-2xl font-bold mb-6 text-center text-teal-400">
-              Schedule a Doctor's Appointment
+              Schedule a Doctor Appointment
             </h2>
             
             <form onSubmit={handleSubmit}>
@@ -169,7 +169,7 @@ const MedicalAppointmentSystem = () => {
                  response.originalRecommendation.toLowerCase() !== response.matchedSpecialization.toLowerCase() && 
                  response.originalRecommendation.toLowerCase() !== 'general' && (
                   <div className="mt-2 text-sm text-gray-400">
-                    <p>We've matched your condition with the most relevant specialist available in our system.</p>
+                    <p>We have matched your condition with the most relevant specialist available in our system.</p>
                     <p className="italic">
                       Based on your symptoms, you should see a{' '}
                       {/^[aeiou]/i.test(getSpecialistDescription(response.originalRecommendation)) ? 'n ' : ' '}
